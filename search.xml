@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>如何修復Hexo的站內搜尋會轉不停的異常問題</title>
+      <link href="/2018/11/28/blog/hexo_search_error/"/>
+      <url>/2018/11/28/blog/hexo_search_error/</url>
+      
+        <content type="html"><![CDATA[<p>當開啟搜尋功能的時候，發現會卡住，經過一番折騰之後，才搞清楚是因為在產出search檔案的時候，<br>會因為某些文章內有錯誤亂碼而導致解析失敗，最後當Browser在載入search.xml的時候會有error!!</p><a id="more"></a><hr><h2 id="解決方法">解決方法</h2><p>找尋錯誤的亂碼，並且修正它，重新generate hexo，產出正確的search.xml文件。</p><hr><h3 id="利用google-chrome快速查找錯誤的位置">利用Google Chrome快速查找錯誤的位置</h3><p>用Chrome開啟Blog的網頁，開啟開發者除錯視窗，如下圖：</p><img src="/2018/11/28/blog/hexo_search_error/hexo_search_error_01.png"><p>點選NetWork的頁籤，按下Blog的搜尋，這時候會發現search.xml報錯，點開錯誤內容，就可以看到錯在哪邊，如下圖：</p><img src="/2018/11/28/blog/hexo_search_error/hexo_search_error_02.png"><hr><h3 id="修改結果">修改結果</h3><p>如果確認都沒有問題的話，在generate一次，重新產出沒有問題的search.xml檔案，正常畫面如下：</p><img src="/2018/11/28/blog/hexo_search_error/hexo_search_error_03.png"><hr><h3 id="延伸閱讀">延伸閱讀</h3><a href="/2018/11/21/vscode/vscode_encoding_error/" title="開啟VSCode顯示錯誤字元的方式">開啟VSCode顯示錯誤字元的方式</a><hr><h3 id="參考資料">參考資料</h3><p><a href="https://www.sqlsec.com/2017/12/hexosearch.html" target="_blank" rel="noopener">Hexo博客无法搜索的终极解决方法</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>VSCode常用快捷鍵-Mac</title>
+      <link href="/2018/11/26/vscode/vscode_hotkey_mac/"/>
+      <url>/2018/11/26/vscode/vscode_hotkey_mac/</url>
+      
+        <content type="html"><![CDATA[<p>常用快捷鍵紀錄，附上官方各系統HotKey表．</p><a id="more"></a><hr><h2 id="基本">基本</h2><table><thead><tr><th style="text-align:left">熱鍵</th><th style="text-align:left">說明</th></tr></thead><tbody><tr><td style="text-align:left">Command + X</td><td style="text-align:left">剪下</td></tr><tr><td style="text-align:left">Command + C</td><td style="text-align:left">複製</td></tr><tr><td style="text-align:left">Command + Shift + K</td><td style="text-align:left">删除行</td></tr><tr><td style="text-align:left">Command + Shift + \</td><td style="text-align:left">跳轉到匹配的括號</td></tr><tr><td style="text-align:left">Command + Up</td><td style="text-align:left">跳轉到文件開頭</td></tr><tr><td style="text-align:left">Command + Down</td><td style="text-align:left">跳轉到文件結尾</td></tr></tbody></table><hr><h2 id="搜尋">搜尋</h2><table><thead><tr><th style="text-align:left">熱鍵</th><th style="text-align:left">說明</th></tr></thead><tbody><tr><td style="text-align:left">Command + F</td><td style="text-align:left">查找</td></tr><tr><td style="text-align:left">Command + G</td><td style="text-align:left">查找下一個</td></tr><tr><td style="text-align:left">Command + Shift + G</td><td style="text-align:left">查找上一個</td></tr><tr><td style="text-align:left">Option + Enter</td><td style="text-align:left">選取所有匹配內容</td></tr></tbody></table><hr><h2 id="進階">進階</h2><table><thead><tr><th style="text-align:left">熱鍵</th><th style="text-align:left">說明</th></tr></thead><tbody><tr><td style="text-align:left">F12</td><td style="text-align:left">跳轉到定義位置</td></tr><tr><td style="text-align:left">Option + F12</td><td style="text-align:left">查看具體定義内容</td></tr></tbody></table><hr><h2 id="導航">導航</h2><table><thead><tr><th style="text-align:left">熱鍵</th><th style="text-align:left">說明</th></tr></thead><tbody><tr><td style="text-align:left">Command + T</td><td style="text-align:left">開啟跳轉指定全域符號</td></tr><tr><td style="text-align:left">Ctrl + G</td><td style="text-align:left">開啟跳轉至某行</td></tr><tr><td style="text-align:left">Command + P</td><td style="text-align:left">開啟跳轉到指定文件</td></tr><tr><td style="text-align:left">F8</td><td style="text-align:left">跳轉到下一個錯誤或警告的位置</td></tr><tr><td style="text-align:left">Shift + F8</td><td style="text-align:left">跳轉到上一個錯誤或警告的位置</td></tr><tr><td style="text-align:left">Ctrl + Shift + Tab</td><td style="text-align:left">開啟所有文件的頁籤查找</td></tr><tr><td style="text-align:left">Ctrl + -</td><td style="text-align:left">退到上一個當前位置</td></tr><tr><td style="text-align:left">Ctrl + Shift + -</td><td style="text-align:left">前進到上一個當前位置</td></tr></tbody></table><hr><h2 id="文件管理">文件管理</h2><table><thead><tr><th style="text-align:left">熱鍵</th><th style="text-align:left">說明</th></tr></thead><tbody><tr><td style="text-align:left">Command + N</td><td style="text-align:left">新建文件</td></tr><tr><td style="text-align:left">Command + O</td><td style="text-align:left">打開文件</td></tr><tr><td style="text-align:left">Command + S</td><td style="text-align:left">保存文件</td></tr><tr><td style="text-align:left">Command + Shift + S</td><td style="text-align:left">另存檔案</td></tr><tr><td style="text-align:left">Command + Option + S</td><td style="text-align:left">全部存擋</td></tr><tr><td style="text-align:left">Command + W</td><td style="text-align:left">關閉視窗</td></tr><tr><td style="text-align:left">Ctrl + Tab</td><td style="text-align:left">跳轉到下一個開啟文件</td></tr></tbody></table><hr><h2 id="測試">測試</h2><table><thead><tr><th style="text-align:left">熱鍵</th><th style="text-align:left">說明</th></tr></thead><tbody><tr><td style="text-align:left">F9</td><td style="text-align:left">設置或取消中斷點</td></tr><tr><td style="text-align:left">F5</td><td style="text-align:left">開始或繼續</td></tr><tr><td style="text-align:left">F11</td><td style="text-align:left">進入斷行</td></tr><tr><td style="text-align:left">Shift + F11</td><td style="text-align:left">跳出斷行</td></tr><tr><td style="text-align:left">F10</td><td style="text-align:left">跳過</td></tr></tbody></table><hr><h2 id="終端機">終端機</h2><table><thead><tr><th style="text-align:left">熱鍵</th><th style="text-align:left">說明</th></tr></thead><tbody><tr><td style="text-align:left">Ctrl + `</td><td style="text-align:left">顯示終端機</td></tr><tr><td style="text-align:left">Ctrl + Shift + `</td><td style="text-align:left">新建終端機</td></tr></tbody></table><hr><h2 id="參考資料">參考資料</h2><p><a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener">Key Bindings for Visual Studio Code</a><br><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank" rel="noopener">Keyboard shortcuts for Windows</a><br><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank" rel="noopener">Keyboard shortcuts for macOS</a><br><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf" target="_blank" rel="noopener">Keyboard shortcuts for Linux</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> VSCode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>如何讓Hexo的Next啟用站內搜尋功能</title>
+      <link href="/2018/11/23/blog/hexo_search_work/"/>
+      <url>/2018/11/23/blog/hexo_search_work/</url>
+      
+        <content type="html"><![CDATA[<p>站內搜尋的功能，已經有被官方整合過，我們只要透過以下幾個簡單的步驟，就可以開啟！</p><a id="more"></a><hr><h2 id="解決方法">解決方法</h2><p>Hexo套件: <a href="https://github.com/flashlab/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a><br>Next主題<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>的搜尋整合套件: <a href="https://github.com/theme-next/hexo-generator-searchdb" target="_blank" rel="noopener">hexo-generator-searchdb</a></p><hr><h3 id="安裝">安裝</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-generator-search</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><hr><h3 id="配置">配置</h3><p>打開_config.yml檔案，將下面的設定內容加到config裡面。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">    path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">    format: html</span><br><span class="line">    limit: 10000</span><br></pre></td></tr></table></figure><hr><h4 id="next主題配置">Next主題配置</h4><p>打開主題的_config.yml檔案，搜尋<code>Local search</code>，將enable設定成true。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line"># Dependencies: https://github.com/flashlab/hexo-generator-search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  # if auto, trigger search by changing input</span><br><span class="line">  # if manual, trigger search by pressing enter key or search button</span><br><span class="line">  trigger: manual</span><br><span class="line">  # show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br></pre></td></tr></table></figure><hr><h3 id="延伸閱讀">延伸閱讀</h3><a href="/2018/11/28/blog/hexo_search_error/" title="如何修復Hexo的站內搜尋會轉不停的異常問題">如何修復Hexo的站內搜尋會轉不停的異常問題</a><hr><h3 id="參考資料">參考資料</h3><p><a href="https://www.itfanr.cc/2017/10/27/add-search-function-to-hexo-blog/" target="_blank" rel="noopener">Hexo博客添加搜索功能</a><br><a href="https://zty.js.org/post/2016/07/08/hexo-localsearch.html" target="_blank" rel="noopener">实现Hexo-next主题博客本地站内搜索</a></p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>限定Next主題使用，理由是hexo-generator-search是利用search.xml的集合來進行搜尋，但是這個主題可以使用該套件自動產生站內所有文章的search.xml. <a href="#fnref1" class="footnote-backref">↩</a></p></li></ol></section>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>開啟VSCode顯示錯誤字元的方式</title>
+      <link href="/2018/11/21/vscode/vscode_encoding_error/"/>
+      <url>/2018/11/21/vscode/vscode_encoding_error/</url>
+      
+        <content type="html"><![CDATA[<p>在Mac環境下使用VSCode來編輯MarkDown的時候，常常會因為語系的切換輸入導致會無意間產生一些亂碼就是俗稱的控制字元<code>BS</code> <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，<br>但是在編譯中，這個符號會被當成是字元而導致編譯異常，如下圖：</p><a id="more"></a><img src="/2018/11/21/vscode/vscode_encoding_error/vscode_encoding_error_01.png"><hr><h2 id="解決方法">解決方法</h2><p>打開VSCode的使用者設定，然後在加上這一行。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;editor.renderControlCharacters&quot;: true</span><br></pre></td></tr></table></figure><p>路徑如下：</p><img src="/2018/11/21/vscode/vscode_encoding_error/vscode_encoding_error_02.png"><img src="/2018/11/21/vscode/vscode_encoding_error/vscode_encoding_error_03.png"><img src="/2018/11/21/vscode/vscode_encoding_error/vscode_encoding_error_04.png"><hr><h3 id="參考資料">參考資料</h3><p><a href="https://segmentfault.com/a/1190000013357949" target="_blank" rel="noopener">vscode控制字符引起的问题以及解决思路</a><br><a href="https://www.zhihu.com/question/61638859" target="_blank" rel="noopener">Mac上的VSCode编写Markdown总是出现隐藏字符</a></p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>控制字元<code>BS</code>在VSCode的編輯畫面中會顯示看起來很小的一個<code>BS</code>,而這個控制符號代表的是BackSpcae的意思，通常是在輸入的時候按了後退或刪除鍵偶爾會出現的字符。 <a href="#fnref1" class="footnote-backref">↩</a></p></li></ol></section>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>如何替Hexo的文章加上註解</title>
+      <link href="/2018/11/10/blog/hexo_note_mark/"/>
+      <url>/2018/11/10/blog/hexo_note_mark/</url>
+      
+        <content type="html"><![CDATA[<p>因為Hexo的Render並沒有包含Markdown的標籤顯示，所以我們要另外安裝套件來使用．</p><a id="more"></a><hr><h2 id="解決方法">解決方法</h2><p>Hexo套件: <a href="https://github.com/hexojs/hexo-renderer-markdown-it" target="_blank" rel="noopener">hexo-renderer-markdown-it</a></p><hr><h3 id="安裝">安裝</h3><p>因為原本Hexo的Render不支援，所以我們要先把原有的Render先卸載．</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save</span><br></pre></td></tr></table></figure><p>卸載後，開始安裝．</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-renderer-markdown-it --save</span><br></pre></td></tr></table></figure><hr><h3 id="配置">配置</h3><p>打開_config.yml檔案，將下面的設定內容加到config裡面。<br>該套件的配置有分成兩種模式，使用者可以自行決定要用哪一種方式來進行配置。</p><ul><li>簡單配置 （支持三種模式)</li><li>高級配置 （客製化的參數設定）</li></ul><p>官方說明文件: <a href="https://github.com/hexojs/hexo-renderer-markdown-it/wiki" target="_blank" rel="noopener">hexo-renderer-markdown-it</a></p><hr><h4 id="簡單配置">簡單配置</h4><p>簡單設置有提供三種模式，讓使用者可以輕鬆設置</p><ul><li>zero：大多解析功能不支援。</li><li>default（GFM）：支援github的規範解析。</li><li>commonmark： 提供更多的預設功能，同時將強制插件使用最新的CommonMark規範．</li></ul><p>將下面的設定內容加到config裡面：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#Markdown-it config</span><br><span class="line">#markdown: &apos;zero&apos;</span><br><span class="line">#markdown: &apos;default&apos;</span><br><span class="line">markdown: &apos;commonmark&apos;</span><br></pre></td></tr></table></figure><hr><h4 id="高級配置">高級配置</h4><p>高級配置可以讓使用者根據不同的情況客製化參數的設定．<br>參數的設定說明在官方文件解釋的很詳細，這邊就不在多做解釋了．</p><p>如果懶得瞭解，可以直接將下面的設定內容加到config裡面就好：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># Markdown-it config</span><br><span class="line">markdown:</span><br><span class="line">  render:</span><br><span class="line">    html: true</span><br><span class="line">    xhtmlOut: false</span><br><span class="line">    breaks: true</span><br><span class="line">    linkify: true</span><br><span class="line">    typographer: true</span><br><span class="line">    quotes: &apos;“”‘’&apos;</span><br><span class="line">  plugins:</span><br><span class="line">    - markdown-it-abbr</span><br><span class="line">    - markdown-it-footnote</span><br><span class="line">    - markdown-it-ins</span><br><span class="line">    - markdown-it-sub</span><br><span class="line">    - markdown-it-sup</span><br><span class="line">  anchors:</span><br><span class="line">    level: 2</span><br><span class="line">    collisionSuffix: &apos;v&apos;</span><br><span class="line">    permalink: false</span><br><span class="line">    permalinkClass: header-anchor</span><br><span class="line">    permalinkSymbol: ^</span><br></pre></td></tr></table></figure><hr><h3 id="使用方法">使用方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Here is a footnote reference,[^1] and another.[^longnote]</span><br><span class="line"></span><br><span class="line">[^1]: Here is the footnote.</span><br><span class="line"></span><br><span class="line">[^longnote]: Here&apos;s one with multiple blocks.</span><br><span class="line">    Subsequent paragraphs are indented to show that they</span><br><span class="line">    belong to the previous footnote.</span><br></pre></td></tr></table></figure><hr><h3 id="延伸閱讀">延伸閱讀</h3><a href="/2018/11/05/blog/hexo_use_record/" title="Hexo使用問題紀錄">Hexo使用問題紀錄</a>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>如何讓Hexo顯示時序圖</title>
+      <link href="/2018/11/09/blog/hexo_filter_sequence/"/>
+      <url>/2018/11/09/blog/hexo_filter_sequence/</url>
+      
+        <content type="html"><![CDATA[<p>同流程圖一樣，Hexo的Markdown的版本是有支持該寫法的，但是顯示上卻不支援…!!</p><a id="more"></a><hr><h2 id="解決方法">解決方法</h2><p>Hexo套件: <a href="https://github.com/bubkoo/hexo-filter-sequence" target="_blank" rel="noopener">hexo-filter-sequence</a></p><hr><h3 id="安裝">安裝</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-filter-sequence</span><br></pre></td></tr></table></figure><hr><h3 id="配置">配置</h3><ul><li>配置參數格式。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sequence:</span><br><span class="line">  # webfont:     # optional, the source url of webfontloader.js</span><br><span class="line">  # snap:        # optional, the source url of snap.svg.js</span><br><span class="line">  # underscore:  # optional, the source url of underscore.js</span><br><span class="line">  # sequence:    # optional, the source url of sequence-diagram.js</span><br><span class="line">  # css: # optional, the url for css, such as hand drawn theme </span><br><span class="line">  options: </span><br><span class="line">    theme: </span><br><span class="line">    css_class:</span><br></pre></td></tr></table></figure><ul><li>打開_config.yml檔案，將下面的設定內容加到config裡面。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">  # Fileter-Sequence</span><br><span class="line">sequence:</span><br><span class="line">  webfont: &quot;https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js&quot;</span><br><span class="line">  snap: &quot;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&quot;</span><br><span class="line">  underscore: &quot;https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js&quot;</span><br><span class="line">  sequence: &quot;https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js&quot;</span><br><span class="line">  style: &quot;&quot;</span><br><span class="line">  options: </span><br><span class="line">    theme: &quot;simple&quot;</span><br><span class="line">    css_class: &quot;&quot;</span><br></pre></td></tr></table></figure><hr><h3 id="使用方法">使用方法</h3><img src="/2018/11/09/blog/hexo_filter_sequence/filter_sequence.png"><h3 id="預覽效果">預覽效果</h3><p><img src="https://camo.githubusercontent.com/03a65874797c53b4b2f4f2d16defe909abc81628/68747470733a2f2f63646e2e7261776769742e636f6d2f6275626b6f6f2f6865786f2d66696c7465722d73657175656e63652f6d61737465722f736e617073686f742e737667" alt="Minion"></p><hr><h3 id="延伸閱讀">延伸閱讀</h3><a href="/2018/11/05/blog/hexo_use_record/" title="Hexo使用問題紀錄">Hexo使用問題紀錄</a>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>如何讓Hexo顯示流程圖</title>
+      <link href="/2018/11/09/blog/hexo_filter_flowchart/"/>
+      <url>/2018/11/09/blog/hexo_filter_flowchart/</url>
+      
+        <content type="html"><![CDATA[<p>Hexo的Markdown的版本基本上是支持流程圖的寫法，但是顯示上卻不支援…!!</p><a id="more"></a><hr><h2 id="解決方法">解決方法</h2><p>Hexo套件: <a href="https://github.com/bubkoo/hexo-filter-flowchart" target="_blank" rel="noopener">hexo-filter-flowchart</a></p><hr><h3 id="安裝">安裝</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-filter-flowchart</span><br></pre></td></tr></table></figure><hr><h3 id="配置">配置</h3><ul><li>配置參數格式。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">flowchart:</span><br><span class="line">  # raphael:   # optional, the source url of raphael.js</span><br><span class="line">  # flowchart: # optional, the source url of flowchart.js</span><br><span class="line">  options: # options used for `drawSVG`</span><br></pre></td></tr></table></figure><ul><li>打開_config.yml檔案，將下面的設定內容加到config裡面。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># Fileter-FlowChart</span><br><span class="line">flowchart:</span><br><span class="line">  raphael: &quot;https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js&quot;</span><br><span class="line">  flowchart: &quot;https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js&quot;</span><br><span class="line">  options: </span><br><span class="line">    scale: 1</span><br><span class="line">    line-width: 2</span><br><span class="line">    line-length: 50</span><br><span class="line">    text-margin: 10</span><br><span class="line">    font-size: 12</span><br></pre></td></tr></table></figure><hr><h3 id="使用方法">使用方法</h3><img src="/2018/11/09/blog/hexo_filter_flowchart/filter_flowchart_review.png"><h3 id="預覽效果">預覽效果</h3><p><img src="https://camo.githubusercontent.com/51780424a31f92eb5f0008b84be7c15d3dd29cc5/68747470733a2f2f63646e2e7261776769742e636f6d2f6275626b6f6f2f6865786f2d66696c7465722d666c6f7763686172742f6d61737465722f736e617073686f742e737667" alt="Minion"></p><hr><h3 id="延伸閱讀">延伸閱讀</h3><a href="/2018/11/05/blog/hexo_use_record/" title="Hexo使用問題紀錄">Hexo使用問題紀錄</a>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>淺談SVN跟Git有何不同</title>
+      <link href="/2018/11/09/svn/svn_vs_git/"/>
+      <url>/2018/11/09/svn/svn_vs_git/</url>
+      
+        <content type="html"><![CDATA[<p>用了多年的SVN，最近因為工作的關係，需要轉戰Git。<br>而對於Git的使用，我卻只停留在配合GitHub上的一些初階使用，並沒有多人合作的相關實務經驗。</p><p>在經過兩個月的實務操作上，感覺跟SVN真的很不一樣，<br>特別是對於SVN一些既有的操作習慣思惟上，對我造成很大的衝擊。<br>不過好在累積了多年的版控經驗，在摸索個幾天之後，反而對Git的效率跟便利性而深深著迷。</p><p>就讓我們來淺談一下SVN跟Git這兩大版控軟體又什麼不同，各自有什麼優缺點?</p><a id="more"></a><p>就如上述所說，如果是個人的使用，基本上跟使用SVN的差異是無感的，只是多了push這個動作。<br>但是如果是多人合作開發的話，那就會很有感覺了…</p><hr><h3 id="svn-集中式管理">SVN (集中式管理)</h3><p>GUI: <a href="https://tortoisesvn.net/index.zh.html" target="_blank" rel="noopener">TortoiseSVN</a></p><p>SVN的管理核心是將所有的版本放在一個服務器上集中管理。</p><blockquote><p>所有的開發者都必須藉由這個服務器來獲得對應版本的資源。<br>開發完，在上傳回原本的服務器上。</p></blockquote><p><font color="#4169E1">簡易流程示意:</font></p><img src="/2018/11/09/svn/svn_vs_git/svn_flow.png"><p><font color="#4169E1">優點:</font></p><ul><li>概念簡單、操作單純、容易上手</li><li>解決版本衝突的工具有很多選擇，而且直覺</li><li>查詢檔案修改歷程非常的直覺且便利</li><li>單一流水式的版本編號，管理直覺</li></ul><p><font color="#4169E1">缺點:</font></p><ul><li>branch的使用很不便利，每用一個branch就要checkout一份</li><li>branch merge 不夠直觀且操作很麻煩</li></ul><p><font color="#4169E1">特色:</font></p><ul><li>直覺、易懂、適合有檔案管理需求的人使用</li></ul><hr><h3 id="git-分散式管理">Git (分散式管理)</h3><p>GUI: <a href="https://www.sourcetreeapp.com/" target="_blank" rel="noopener">SourceTree</a></p><p>Git的管理一樣是有一個專門放置代碼的共用服務器，<br>但是核心則是希望開發者的本機端能管理自己的代碼。</p><blockquote><p>所有的開發者都可以在對應的版本上，建立一個副本並且在本機端進行版控。<br>開發完後，將開發過程中所進行的版控，整串上傳回原本的遠端版本上進行合併。</p></blockquote><p><font color="#4169E1">簡易流程示意:</font></p><img src="/2018/11/09/svn/svn_vs_git/git_basic_flow.png"><p><font color="#4169E1">優點:</font></p><ul><li>branch的切換非常的迅速且方便</li><li>branch merge的功能操作容易且直覺</li><li>pull request的功能，讓code review可以更加落實</li></ul><p><font color="#4169E1">缺點:</font></p><ul><li>沒有版控觀念的人不容易上手</li><li>解決版本衝突不夠直觀</li><li>查找檔案修改歷程不夠便利</li><li>128bit的ID編號，在管理上會需要特別注意版本對齊的問題</li></ul><p><font color="#4169E1">特色:</font></p><ul><li>輕巧、敏捷、很適合拿來做多人模組開發</li></ul><hr><h3 id="svn和git的命令比較表">SVN和Git的命令比較表</h3><table><thead><tr><th style="text-align:left">操作</th><th style="text-align:left">SVN</th><th style="text-align:left">Git</th></tr></thead><tbody><tr><td style="text-align:left">建立數據庫</td><td style="text-align:left">svn checkout</td><td style="text-align:left">git clone</td></tr><tr><td style="text-align:left">提交 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></td><td style="text-align:left">svn commit</td><td style="text-align:left">git commit</td></tr><tr><td style="text-align:left">查看提交的詳細記錄</td><td style="text-align:left">svn cat</td><td style="text-align:left">git show</td></tr><tr><td style="text-align:left">確認狀態</td><td style="text-align:left">svn status</td><td style="text-align:left">git status</td></tr><tr><td style="text-align:left">確認差異</td><td style="text-align:left">svn diff</td><td style="text-align:left">git diff</td></tr><tr><td style="text-align:left">確認歷程</td><td style="text-align:left">svn log</td><td style="text-align:left">git log</td></tr><tr><td style="text-align:left">新增</td><td style="text-align:left">svn add</td><td style="text-align:left">git add</td></tr><tr><td style="text-align:left">移動</td><td style="text-align:left">svn mv</td><td style="text-align:left">git mv</td></tr><tr><td style="text-align:left">刪除</td><td style="text-align:left">svn rm</td><td style="text-align:left">git rm</td></tr><tr><td style="text-align:left">取消修改 <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></td><td style="text-align:left">svn revert</td><td style="text-align:left">git reset</td></tr><tr><td style="text-align:left">建立分支</td><td style="text-align:left">svn copy</td><td style="text-align:left">git branch</td></tr><tr><td style="text-align:left">切換分支</td><td style="text-align:left">svn switch</td><td style="text-align:left">git checkout</td></tr><tr><td style="text-align:left">合併</td><td style="text-align:left">svn merge</td><td style="text-align:left">git merge</td></tr><tr><td style="text-align:left">建立標籤 <sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></td><td style="text-align:left">svn copy</td><td style="text-align:left">git tag</td></tr><tr><td style="text-align:left">更新</td><td style="text-align:left">svn update</td><td style="text-align:left">git pull</td></tr><tr><td style="text-align:left">刷新更新 <sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup></td><td style="text-align:left">-</td><td style="text-align:left">git fetch</td></tr><tr><td style="text-align:left">上傳遠端 <sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup></td><td style="text-align:left">-</td><td style="text-align:left">git push</td></tr><tr><td style="text-align:left">忽視檔案清單</td><td style="text-align:left">.svnignore</td><td style="text-align:left">.gitignore</td></tr></tbody></table><hr><h3 id="參考資料">參考資料</h3><p><a href="https://blog.csdn.net/mine_song/article/details/70770467" target="_blank" rel="noopener">SVN和Git介绍,区别,优缺点,适用范围总结</a><br><a href="https://backlog.com/git-tutorial/tw/" target="_blank" rel="noopener">連猴子都能懂的Git入門指南</a></p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>SVN的 commit 是會直接將修改的內容上傳到遠端的數據庫上．<br>Git的 commit 則是將異動的檔案上傳至本機端，在還沒有push之前，所有的異動都只會在本機端上 <a href="#fnref1" class="footnote-backref">↩</a></p></li><li id="fn2" class="footnote-item"><p>SVN的 revert 是用來將修改的內容回復到下載前的內容．<br>Git的 revert 是用來取消提交到本機端． <a href="#fnref2" class="footnote-backref">↩</a></p></li><li id="fn3" class="footnote-item"><p>SVN的分支與標籤在使用上概念是相同的，都是建立一個新的branch．<br>Git的標籤則可以拿來做分類或版本查找用． <a href="#fnref3" class="footnote-backref">↩</a></p></li><li id="fn4" class="footnote-item"><p>SVN可以直接查看log來得知檔案的異動．<br>Git的 fetch 的功能則是刷新要更新的檔案有哪些，但不是真的把檔案下載到自己的本機端． <a href="#fnref4" class="footnote-backref">↩</a></p></li><li id="fn5" class="footnote-item"><p>SVN的commit就直接上傳到遠端數據庫了，所以沒有相關的指令可以操作．<br>Git的 push 則是將commit到本機端的數據上傳到遠端的數據庫。 <a href="#fnref5" class="footnote-backref">↩</a></p></li></ol></section>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tools </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SVN </tag>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>找不到Hexo的命令</title>
+      <link href="/2018/11/05/blog/hexo_command_not_found/"/>
+      <url>/2018/11/05/blog/hexo_command_not_found/</url>
+      
+        <content type="html"><![CDATA[<p>因為Nodejs有釋出新的版本，結果更新完之後，原本的Hexo指令就不能使用了。</p><a id="more"></a><hr><p>更新後，Console視窗會顯示</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo: command not found</span><br></pre></td></tr></table></figure><blockquote><p><font color="#ff5151">主要因為環境變數的路徑被改變了</font></p></blockquote><hr><h3 id="解決方法">解決方法</h3><p>目前網路上查詢的解法有三個。</p><h4 id="1-重新安裝nodejs">1.重新安裝Nodejs</h4><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Nodejs官方網站</a>。</p><blockquote><p>但是對我無效，因為我就是安裝新版的Nodejs才產生問題的。</p></blockquote><h4 id="2-重新安裝hexo-讓安裝的過程中-重新去指定路徑">2.重新安裝Hexo，讓安裝的過程中，重新去指定路徑</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>我重新安裝後，確定可以正常使用。</p><blockquote><p>如果MacOS在重新安裝有遭遇權限問題的話，請記得下sudo</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h4 id="3-手動指定路徑">3.手動指定路徑</h4><p>Windows的環境下，請直接調整環境變數就好。<br>MacOS的環境下，就只能用指令的法式來指定路徑了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /root/.nvm/versions/node/XX.X.X/bin/hexo /usr/bin/hexo</span><br><span class="line">ln -s /root/.nvm/versions/node/XX.X.X/bin/node /usr/bin/node</span><br></pre></td></tr></table></figure><hr><h3 id="延伸閱讀">延伸閱讀</h3><a href="/2018/11/05/blog/hexo_use_record/" title="Hexo使用問題紀錄">Hexo使用問題紀錄</a>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hexo使用問題紀錄</title>
+      <link href="/2018/11/05/blog/hexo_use_record/"/>
+      <url>/2018/11/05/blog/hexo_use_record/</url>
+      
+        <content type="html"><![CDATA[<p>問題紀錄:</p><a id="more"></a><ul><li><a href="/2018/11/05/blog/hexo_command_not_found/" title="找不到Hexo的命令">找不到Hexo的命令</a></li><li><a href="/2018/11/05/blog/hexo_how_link_other_post/" title="如何連結有下時間標籤的站內文章">如何連結有下時間標籤的站內文章</a></li><li><a href="/2018/11/09/blog/hexo_filter_flowchart/" title="如何讓Hexo顯示流程圖">如何讓Hexo顯示流程圖</a></li><li><a href="/2018/11/09/blog/hexo_filter_sequence/" title="如何讓Hexo顯示時序圖">如何讓Hexo顯示時序圖</a></li><li><a href="/2018/11/10/blog/hexo_note_mark/" title="如何替Hexo的文章加上註解">如何替Hexo的文章加上註解</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>如何連結有下時間標籤的站內文章</title>
+      <link href="/2018/11/05/blog/hexo_how_link_other_post/"/>
+      <url>/2018/11/05/blog/hexo_how_link_other_post/</url>
+      
+        <content type="html"><![CDATA[<p>Hexo本身有提供連接文章的作法，但是針對有下了時間標籤的文章來說，<br>卻會因為產生不同的URL而導致連結的失效。</p><a id="more"></a><p>Hexo官方本身有提供一個引用站內文章的方法</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[快速上手，如何DIY自己的部落格!!](quick_blog)</span><br></pre></td></tr></table></figure><blockquote><p><code>[文章名稱](文章的檔案名稱)</code></p></blockquote><hr><p>但是這樣的做法，針對如果有下了時間標籤的文章，<br>會因為Hexo在運作的過程中，會自動補上對應時間路徑的URL，最後會顯示以下結果。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cannot GET /2018/07/11/blog/quick_blog/quick_blog/</span><br></pre></td></tr></table></figure><h3 id="解決方法">解決方法</h3><p>其實官方還有提供另外一個引用站內文章的方法，只是在preview上，<br>可能會不太直觀，但是卻可以解決這個問題。</p><blockquote><p>官方文件 <a href="https://hexo.io/zh-tw/docs/tag-plugins.html" target="_blank" rel="noopener">Hexo-Tag-Plugins</a></p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link quick_blog %&#125;</span><br><span class="line">&#123;% post_link 文章的檔案名稱 想要顯示的名稱 %&#125;</span><br></pre></td></tr></table></figure><blockquote><p>如果顯示名稱那邊沒有加的話，則預設會抓該文章的title來顯示。</p></blockquote><blockquote><p>特別要注意的是，該標籤僅限定在_posts資料夾底下的文章!</p></blockquote><hr><h3 id="延伸閱讀">延伸閱讀</h3><a href="/2018/11/05/blog/hexo_use_record/" title="Hexo使用問題紀錄">Hexo使用問題紀錄</a>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>NexT主題的建置</title>
+      <link href="/2018/07/12/blog/change_blog_theme/"/>
+      <url>/2018/07/12/blog/change_blog_theme/</url>
+      
+        <content type="html"><![CDATA[<p>架設部落格的最大好處，就是可以選一個喜歡的主題並且自由的更改或調整成自己喜歡的樣式。</p><a id="more"></a><hr><h3 id="安裝主題">安裝主題</h3><p>直接拿這個部落格的主題為例，我們先建立喜歡的主題，指令如下:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next.git ./themes/next</span><br></pre></td></tr></table></figure><blockquote><p>記得是下載到./themes/這個資料夾</p></blockquote><hr><h3 id="切換主題">切換主題</h3><p>開啟部落格目錄下的<code>_config.yml</code>檔案，在theme的標籤那邊打上你要切換的主題名稱。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure><p>重整一下網頁，你會發現切換主題就是這麼的簡單…!!<br>每一個主題所提供的功能都不太一樣，設置的方式當然也會有些許的差別喔!!<br><a href="https://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT官方網站</a>的文件寫得很詳細，對這個主題有興趣的人，可以自行去研究一下。</p><hr><h3 id="使用筆記">使用筆記</h3><hr><h4 id="閱讀次數-訪客量紀錄">閱讀次數、訪客量紀錄</h4><p>在NexT主題中，這兩個功能預設是關閉的，所以我們需要額外的設定才會啟用。<br>畢竟是網路空間，如果要紀錄，既便是個很簡單的計數器，也都是要一個資料庫的。</p><p>請查看<a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="noopener">为NexT主题添加文章阅读量统计功能</a>的教學進行設置。</p><blockquote><p>NexT官方已將作者Doublemine文章內所貢獻的代碼整合完畢，所以可以直接跳到配置LeanCloud的步驟</p></blockquote><hr><h4 id="留言板">留言板</h4><p>在NexT主題中的留言板，預設也是關閉的，這邊也是需要特別的設置才會啟用。<br>因為考量到大陸無法使用Google帳號，所以這邊直接選擇Gitment來當做這個部落格的留言版。</p><p>這篇文章<a href="https://extremegtr.github.io/2017/09/07/Add-Gitment-comment-system-to-hexo-theme-NexT/" target="_blank" rel="noopener">添加Gitment评论系统到Hexo主题NexT</a>寫得很詳細，這邊就不在另外解釋了，照著文章內的教學進行設置即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> NexT </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>快速上手，如何DIY自己的部落格!!</title>
+      <link href="/2018/07/11/blog/quick_blog/"/>
+      <url>/2018/07/11/blog/quick_blog/</url>
+      
+        <content type="html"><![CDATA[<p>這個Bolg主要是在Windows系統下用GitHub + Hexo + NexT(5.1.4)來架設自己的部落格，<br>如果你是Linux系統的話，網路上有不少的文章可以參考，甚至還有官方文件可以看，<br>所以優化跟調整的部分這邊就不多說了。</p><p>以下是為建置的步驟，有興趣的人可以參考一下。</p><a id="more"></a><hr><h3 id="申請github">申請GitHub</h3><ul><li>至<a href="https://github.com/" target="_blank" rel="noopener">GitHub官方網站</a>註冊帳號。</li><li>付費方式直接用Free就好了。</li><li>驗證Email。</li></ul><hr><h3 id="建立blog專用項目">建立Blog專用項目</h3><ul><li>在GitHub上開一個新的Repositories。</li><li>命名為 your-github-username.github.io.git</li></ul><blockquote><p><code>your-github-username 你的帳號名稱。</code></p></blockquote><hr><h3 id="安裝-git">安裝 git</h3><ul><li>至 <a href="https://git-scm.com/" target="_blank" rel="noopener">git-scm</a> 官方網站。</li><li><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Download 2.18.0 for Windows</a>。</li></ul><hr><h3 id="安裝-node-js">安裝 node.js</h3><ul><li>至 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> 官方網站。</li><li><a href="https://nodejs.org/dist/v8.11.4/node-v8.11.4-x64.msi" target="_blank" rel="noopener">Download 8.11.4 LTS for Windows (x64)</a>。</li></ul><blockquote><p><code>這邊有兩種版本，我們直接選&quot;Recommended For Most Users&quot;的版本就好。</code></p></blockquote><hr><h3 id="安裝-hexo">安裝 Hexo</h3><p>當git跟node.js安裝完畢後，就可以透過npm來安裝Hexo。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><hr><h3 id="初始化hexo">初始化Hexo</h3><p>當Hexo安裝完之後，執行下列指令，讓Hexo開始進行部落格環境的初始配置。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><blockquote><p><code>&lt;folder&gt; 部落格的資料夾位置。</code></p></blockquote><hr><h3 id="部落格的開張">部落格的開張</h3><p>當整個初始配置完成之後，會在安裝的目錄下面看到以下的檔案配置。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure><p>此時可以執行下列指令，測試部落格是否可以正常運行。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure><blockquote><p><code>hexo預設的網址為http://locallhost:4000/</code></p></blockquote><p>接下來只要在網頁上輸入以上網址，噹噹噹，你將會看到Hexo預設的網頁畫面，<br>到這邊，先恭喜你，已經完成一大半了。</p><blockquote><p><code>如果在網頁上輸入以上網址卻沒作用的話，請檢查一下是否有本基端的port被佔用了。</code></p></blockquote><p>如果port真的被佔用或著想要直接指定port的位置，可以參考以下的指令。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s -p</span><br></pre></td></tr></table></figure><p><code>s(server): 啟動伺服器</code><br><code>-p(port): 所要指定的port</code></p><hr><h3 id="創建新文章">創建新文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] your-article-title</span><br></pre></td></tr></table></figure><p>根據設定的layout模板，將產生出來的文章檔案分別放在</p><blockquote><p><code>source/_drafts/、source/_posts/、source/下。</code></p></blockquote><p>Hexo 有三種預設 layout: draft(草稿)、post(公開文章) 和page(頁面)，<br>如果下指令沒有特別指定layout的話，基本的預設是post。</p><blockquote><p><code>如果是window系統的話，不用這麼麻煩，可以直接copy官方預設的.md文章，</code><br><code>改個名稱丟到指定的目錄下，一樣可以運作的。</code></p></blockquote><hr><h3 id="編輯文章">編輯文章</h3><p>產生出來的文章會是 Markdown(.md) 的格式，<br>相關的語法可以參考 <a href="https://markdown.tw/" target="_blank" rel="noopener">Markdown語法說明</a>。</p><blockquote><p><code>市面上有很多Markdown的編輯器，找個用的順手的來編輯文章就好</code></p></blockquote><p>個人推薦 <a href="https://hackmd.io/" target="_blank" rel="noopener">HackMD</a></p><hr><h3 id="上傳文章">上傳文章</h3><p>將寫好的文章放到網路空間是基本的常識，所以我們現在要設定Hexo的發佈設定。<br>還記得最剛開始用github所建立的Repositories嗎?<br>開啟部落格目錄下的<code>_config.yml</code>檔案，在#Deployment的位置打上你的repo位置。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:<span class="comment">//github.com/your-github-username/your-github-username.github.io.git</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><blockquote><p><code>your-github-username</code> 你的帳號名稱。</p></blockquote><p>設定完之後，我們就可以開始利用以下的指令進行編譯跟發佈了!!</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><blockquote><p><code>generate:</code> 產生靜態檔案<br><code>deploy</code> 發佈靜態檔案到指定位置</p></blockquote><hr><h3 id="hexo常用指令">Hexo常用指令</h3><p>Hexo是用指令的方式來進行，看起來好像很複雜，<br>但其實比較常用的指令就這三個，剩下的其實都可以直接在視窗環境下直接操作。</p><ul><li>clean: Remove generated files and cache.</li><li>generate: Generate static files.</li><li>deploy: Deploy your website.</li></ul><p>流程很簡單，基本上就是:<br>編輯文章 &gt; 產生靜態檔 &gt; 發佈上傳</p><hr><h3 id="延伸閱讀">延伸閱讀</h3><a href="/2018/07/12/blog/change_blog_theme/" title="NexT主題的建置">NexT主題的建置</a><hr><h3 id="參考資料">參考資料</h3><p><a href="https://hexo.io/zh-tw/" target="_blank" rel="noopener">Hexo官方網站</a><br><a href="https://wizardforcel.gitbooks.io/markdown-simple-world/7.html" target="_blank" rel="noopener">Hexo 入门指南</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>
